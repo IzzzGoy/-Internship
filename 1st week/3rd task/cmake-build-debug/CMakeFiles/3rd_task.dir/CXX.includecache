@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/3rd task/erase_duplicates.h
+vector
+-
+algorithm
+-
+set
+-
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/3rd task/main.cpp
+iostream
+-
+erase_duplicates.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/3rd task/erase_duplicates.h
+template.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/3rd task/template.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/3rd task/template.h
+ostream
+-
+vector
+-
+string
+-
+map
+-
+

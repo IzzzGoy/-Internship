@@ -1,0 +1,3 @@
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/cmake-build-debug/CMakeFiles/4th_task.dir
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/cmake-build-debug/CMakeFiles/edit_cache.dir

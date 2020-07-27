@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="1st_week" targetName="1st_week" />
+      <config projectName="3rd_task" targetName="3rd_task" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc05f5d2-549a-4c6c-b135-3a99d349f807" name="Default Changelist" comment="" />
+    <list default="true" id="db722fa9-13ea-4fea-9b40-0adc127aa28f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,17 +25,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="gstj1xtd" />
+    <option name="directoryName" value="34vdb10e" />
   </component>
-  <component name="ProjectId" id="1fGCuj5MHkyKOfjTxekwzEtcQ0h" />
+  <component name="ProjectId" id="1fGnMXnkHcEAU2F0FF8bwH56Sy8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -46,8 +44,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Documents\GitHub\-Internship\1st week\3rd task" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="1st_week" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="1st_week" TARGET_NAME="1st_week" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1st_week" RUN_TARGET_NAME="1st_week">
+    <configuration name="3rd_task" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="3rd_task" TARGET_NAME="3rd_task" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="3rd_task" RUN_TARGET_NAME="3rd_task">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -58,13 +61,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bc05f5d2-549a-4c6c-b135-3a99d349f807" name="Default Changelist" comment="" />
-      <created>1595835266729</created>
+      <changelist id="db722fa9-13ea-4fea-9b40-0adc127aa28f" name="Default Changelist" comment="" />
+      <created>1595853249746</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595835266729</updated>
-      <workItem from="1595835268624" duration="9000" />
-      <workItem from="1595835350629" duration="4109000" />
+      <updated>1595853249746</updated>
+      <workItem from="1595853251450" duration="2492000" />
     </task>
     <servers />
   </component>
@@ -72,25 +74,21 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="267" key="FileChooserDialogImpl" timestamp="1595847833319">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595856223182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="739" y="267" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1595847833319" />
-    <state width="1877" height="65" key="GridCell.Tab.0.bottom" timestamp="1595847845298">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595856223182" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595856223182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="65" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595847845298" />
-    <state width="1877" height="65" key="GridCell.Tab.0.center" timestamp="1595847845297">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595856223182" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595856223182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="65" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595847845297" />
-    <state width="1877" height="65" key="GridCell.Tab.0.left" timestamp="1595847845297">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595856223182" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595856223182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="65" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595847845297" />
-    <state width="1877" height="65" key="GridCell.Tab.0.right" timestamp="1595847845298">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="65" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595847845298" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595856223182" />
   </component>
 </project>

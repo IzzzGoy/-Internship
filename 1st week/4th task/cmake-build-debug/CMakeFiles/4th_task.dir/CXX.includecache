@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/main.cpp
+iostream
+-
+vector
+-
+string
+-
+algorithm
+-
+template.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/template.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/template.h
+ostream
+-
+vector
+-
+string
+-
+map
+-
+
