@@ -3,4 +3,4 @@ project(4th_task)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(4th_task main.cpp funcs.h template.h)
+add_executable(4th_task main.cpp template.h)

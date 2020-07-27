@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/funcs.h">
-			<Option target="4th_task"/>
-		</Unit>
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/1st week/4th task/main.cpp">
 			<Option target="4th_task"/>
 		</Unit>
