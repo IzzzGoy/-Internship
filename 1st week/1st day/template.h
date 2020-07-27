@@ -11,7 +11,7 @@
 #include <map>
 
 template<typename T>
-std::ostream& operator<<(std::ostream &out, const std::vector<T> &vi){
+std::ostream& operator<< (std::ostream &out, const std::vector<T> &vi){
     out << '[';
     for (const auto &it : vi){
         out << it << ' ';
@@ -21,13 +21,13 @@ std::ostream& operator<<(std::ostream &out, const std::vector<T> &vi){
 }
 
 template<typename F, typename S>
-std::ostream& operator<<(std::ostream &out, const std::pair<F,S> pair){
+std::ostream& operator<< (std::ostream &out, const std::pair<F,S> pair){
     out << "{ " << pair.first << " : " << pair.second << " }";
     return out;
 }
 
 template<typename K,typename V>
-std::ostream& operator<<(std::ostream &out, const std::map<K,V> &map){
+std::ostream& operator<< (std::ostream &out, const std::map<K,V> &map){
     out << '{';
     for (const auto &it : map) {
         out << it;
