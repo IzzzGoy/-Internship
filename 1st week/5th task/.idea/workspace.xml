@@ -20,16 +20,16 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="4th_task" targetName="4th_task" />
+      <config projectName="5th_task" targetName="5th_task" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a26cc0a-d120-4ae2-b88a-375f88552f3a" name="Default Changelist" comment="" />
+    <list default="true" id="f2784931-2f8b-4662-bffb-e15eb01d6112" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,9 +43,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="6o2z9eov" />
+    <option name="directoryName" value="tqj42hr9" />
   </component>
-  <component name="ProjectId" id="1fGtOLRYjmdGNnE0renkgzbjyZ9" />
+  <component name="ProjectId" id="1fJSwarqBoe9UmCZW0tE9MyDqoZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,15 +61,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Alex\Documents\GitHub\-Internship\1st week\4th task" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration name="4th_task" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="4th_task" TARGET_NAME="4th_task" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="4th_task" RUN_TARGET_NAME="4th_task">
+    <configuration name="5th_task" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="5th_task" TARGET_NAME="5th_task" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="5th_task" RUN_TARGET_NAME="5th_task">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -80,13 +74,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0a26cc0a-d120-4ae2-b88a-375f88552f3a" name="Default Changelist" comment="" />
-      <created>1595856223411</created>
+      <changelist id="f2784931-2f8b-4662-bffb-e15eb01d6112" name="Default Changelist" comment="" />
+      <created>1595934941784</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595856223411</updated>
-      <workItem from="1595856224708" duration="7922000" />
-      <workItem from="1595934847035" duration="94000" />
+      <updated>1595934941784</updated>
+      <workItem from="1595934943370" duration="5325000" />
+      <workItem from="1596020303486" duration="1760000" />
     </task>
     <servers />
   </component>
@@ -106,25 +100,52 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595934940791">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1596021425972">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595934940791" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595934940790">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596021425972" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1596021425972">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595934940790" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595934940790">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596021425972" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1596021425972">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595934940790" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595934940791">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596021425972" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1596021425972">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595934940791" />
-    <state x="685" y="309" key="refactoring.ChangeSignatureDialog" timestamp="1595857858782">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596021425972" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1596021424933">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="685" y="309" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595857858782" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596021424933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1596021424933">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596021424933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1596021424933">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596021424933" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1596021424933">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596021424933" />
+    <state x="685" y="309" key="refactoring.ChangeSignatureDialog" timestamp="1595936110508">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="685" y="309" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595936110508" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

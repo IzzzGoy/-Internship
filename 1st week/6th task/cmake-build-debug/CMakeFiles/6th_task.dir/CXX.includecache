@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/6th task/Cfraction.h
+iostream
+-
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/6th task/main.cpp
+iostream
+-
+Cfraction.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/6th task/Cfraction.h
+

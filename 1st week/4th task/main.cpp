@@ -48,7 +48,7 @@ pair<vector<string>::iterator, vector<string>::iterator> FindStartsWith(
 int main() {
     vector<string> v = { "dasdas", "mdsada","mkmsad", "mkpoo", "sad"};
     sort(v.begin(),v.end());
-    auto result = FindStartsWith(v.begin(),v.end(),"mk");
+    auto result = FindStartsWith(v.begin(),v.end(),"m");
     for (auto i = result.first; i != result.second ; ++i) {
         cout << *i << " ";
     }
