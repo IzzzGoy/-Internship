@@ -36,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../4th task" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595853249746</updated>
       <workItem from="1595853251450" duration="2492000" />
+      <workItem from="1596023466646" duration="1246000" />
     </task>
     <servers />
   </component>
@@ -74,6 +75,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1596023474901">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1596023474901" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595856223182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

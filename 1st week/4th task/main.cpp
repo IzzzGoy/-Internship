@@ -15,7 +15,7 @@ pair<vector<string>::iterator, vector<string>::iterator> FindStartsWith(
         const char& prefix
         ){
     pair<vector<string>::iterator, vector<string>::iterator> pair = make_pair(end,end);         ///Инициализируем пару итераторами конца набора
-    for (auto& iter = begin; iter != end; advance(iter, 1)){
+    for (auto& iter = begin; iter != end; iter++){
         if (pair.first == end && (*iter)[0] == prefix){                     ///Находим первое совпадение
             pair.first = iter;
         }
@@ -33,7 +33,7 @@ pair<vector<string>::iterator, vector<string>::iterator> FindStartsWith(
         const string& prefix
 ){
     pair<vector<string>::iterator, vector<string>::iterator> pair = make_pair(end,end);
-    for (auto& iter = begin; iter != end; advance(iter, 1)){
+    for (auto& iter = begin; iter != end; iter++){
         if (pair.first == end && (*iter).find(prefix) == 0){
             pair.first = iter;
         }

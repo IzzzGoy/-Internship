@@ -54,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../5th task" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,6 +87,7 @@
       <updated>1595856223411</updated>
       <workItem from="1595856224708" duration="7922000" />
       <workItem from="1595934847035" duration="94000" />
+      <workItem from="1596023477303" duration="1812000" />
     </task>
     <servers />
   </component>
@@ -106,6 +107,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1596023501445">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1596023501445" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595934940791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

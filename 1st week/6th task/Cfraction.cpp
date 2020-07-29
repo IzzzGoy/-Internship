@@ -72,11 +72,11 @@ void Cfraction::operator()(long new_top, long new_bottom) {
 }
 
 bool Cfraction::operator==(const Cfraction &other) const {
-    return ( double (this->top) / this->bottom == double (other.top) / other.bottom);
+    return (*this - other).top == 0;
 }
 
 bool Cfraction::operator!=(const Cfraction &other) const {
-    return ( double (this->top) / this->bottom != double (other.top) / other.bottom);
+    return (*this - other).top != 0;
 }
 
 bool Cfraction::operator<=(const Cfraction &other) const {
@@ -96,11 +96,8 @@ bool Cfraction::operator<(const Cfraction &other) const {
 }
 
 Cfraction &Cfraction::operator=(const Cfraction &other) {
-    if (this == &other) return *this;
+    if (this == &other || other.bottom == 0) return *this;
     this->top = other.top;
     this->bottom = other.bottom;
     return *this;
 }
-
-
-

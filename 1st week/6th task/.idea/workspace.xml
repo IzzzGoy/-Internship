@@ -36,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../5th task" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,6 +63,7 @@
       <updated>1595945974356</updated>
       <workItem from="1595945975634" duration="3648000" />
       <workItem from="1596014439778" duration="6469000" />
+      <workItem from="1596023508498" duration="1990000" />
     </task>
     <servers />
   </component>
@@ -78,22 +79,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1596020300635" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1596021509607">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1596026875377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596021509607" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1596021509607">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596026875377" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1596026875377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596021509607" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1596021509607">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596026875377" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1596026875376">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596021509607" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1596021509607">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596026875376" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1596026875377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596021509607" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596026875377" />
+    <state width="1877" height="2" key="GridCell.Tab.1.bottom" timestamp="1596026863472">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596026863472" />
+    <state width="1877" height="2" key="GridCell.Tab.1.center" timestamp="1596026863472">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596026863472" />
+    <state width="1877" height="2" key="GridCell.Tab.1.left" timestamp="1596026863472">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596026863472" />
+    <state width="1877" height="2" key="GridCell.Tab.1.right" timestamp="1596026863472">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596026863472" />
     <state x="569" y="214" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1595952573376">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
