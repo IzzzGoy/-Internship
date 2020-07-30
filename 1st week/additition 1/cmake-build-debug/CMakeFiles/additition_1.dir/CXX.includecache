@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Node.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Value.h
+Node.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Node.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Variable.cpp
+Variable.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Variable.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Variable.h
+string
+-
+Value.h
+C:/Users/Alex/Documents/GitHub/-Internship/1st week/additition 1/Value.h
+
