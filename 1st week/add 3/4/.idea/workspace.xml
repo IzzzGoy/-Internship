@@ -38,6 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,6 +64,10 @@
       <option name="presentableId" value="Default" />
       <updated>1596117176076</updated>
       <workItem from="1596117177523" duration="17570000" />
+      <workItem from="1596185484797" duration="97000" />
+      <workItem from="1596436701142" duration="630000" />
+      <workItem from="1596448871944" duration="1409000" />
+      <workItem from="1596460276482" duration="1735000" />
     </task>
     <servers />
   </component>
@@ -74,22 +79,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="551" y="139" key="#C/C++/0.0.1920.1050@0.0.1920.1050" timestamp="1596121081325" />
-    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1596139747270">
+    <state width="1877" height="107" key="GridCell.Tab.0.bottom" timestamp="1596461590509">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596139747270" />
-    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1596139747270">
+    <state width="1877" height="107" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596461590509" />
+    <state width="1877" height="107" key="GridCell.Tab.0.center" timestamp="1596461590509">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596139747270" />
-    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1596139747270">
+    <state width="1877" height="107" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596461590509" />
+    <state width="1877" height="107" key="GridCell.Tab.0.left" timestamp="1596461590509">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596139747270" />
-    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1596139747270">
+    <state width="1877" height="107" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596461590509" />
+    <state width="1877" height="107" key="GridCell.Tab.0.right" timestamp="1596461590509">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596139747270" />
+    <state width="1877" height="107" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596461590509" />
     <state width="1877" height="288" key="GridCell.Tab.1.bottom" timestamp="1596139747267">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

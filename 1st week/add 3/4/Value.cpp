@@ -11,12 +11,14 @@ void Value::Simplify() {
         tmp->prev->next = tmp->next;
         tmp->next = nullptr;
         tmp->prev = nullptr;
+        delete tmp;
 
         tmp = next;
         next = tmp->next;
         next->prev = tmp->prev;
         tmp->next = nullptr;
         tmp->prev = nullptr;
+        delete tmp;
     }
 }
 

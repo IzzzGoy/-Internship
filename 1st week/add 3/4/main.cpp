@@ -63,11 +63,7 @@ int main() {
     tmp->addNode(new Operation('*'));
     tmp = tmp->next;
     tmp->addNode(new Bracket(NodeType::OPEN_BRACKET));
-            //new Bracket(NodeType::OPEN_BRACKET);
-
-    //begin.addNode(tmp);
     tmp = tmp->next;
-
     tmp->addNode(new Value(6));
     tmp = tmp->next;
     tmp->addNode(new Operation('+'));
