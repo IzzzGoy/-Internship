@@ -17,6 +17,11 @@ private:
     static void trim(string& line);
     void reformat_query(string & query, int pos);
     map<string,Table> tables;
+    void create(string& query, int word_end);
+    void select(string& query, int word_end);
+    void insert(string& query, int word_end);
+    void remove(string& query, int word_end);
+    const Row create_qrow(string &query, string &table_name, int word_end, bool with_where);
 };
 
 

@@ -4,8 +4,6 @@
 
 #include "Table.h"
 
-#include <utility>
-
 Table::Table(vector<Header> headers) : headers(std::move(headers)){}
 
 bool Table::add_row(const Row &row) {

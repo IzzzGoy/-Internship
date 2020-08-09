@@ -24,9 +24,23 @@ int main() {
     dataBase.exec(s);
     s = "insert in b 4 6.3";
     dataBase.exec(s);
-    string query;
-    getline(cin,query);
-    dataBase.exec(query);
+    s = "insert in b 5 6.3";
+    dataBase.exec(s);
+    s = "select from b";
+    dataBase.exec(s);
+    s = "remove from b";
+    dataBase.exec(s);
+    s = "select from b";
+    dataBase.exec(s);
+    /*while (true){
+        string query;
+        getline(cin,query);
+
+        if (query == "exit") break;
+
+        dataBase.exec(query);
+    }*/
+
 
     return 0;
 }
