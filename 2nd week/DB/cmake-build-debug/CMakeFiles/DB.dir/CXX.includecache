@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.cpp
+algorithm
+-
+iostream
+-
+DataBase.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
+string
+-
+Table.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+string
+-
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Row.h
+vector
+-
+Entity.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
+map
+-
+utility
+-
+vector
+-
+Entity.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+Row.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Row.h
+

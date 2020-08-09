@@ -4,37 +4,63 @@
 
 #include "Table.h"
 
-bool Table::add_column(const string &column_name, const EntityType &type) {
-    if (rows.find(column_name) == rows.end()){
-        rows[column_name] = make_pair(type,vector<Entity>());
-        return true;
-    } else {
-        return false;
-    }
-}
+#include <utility>
 
-bool Table::add_entity(const string &column_name, const Entity &entity) {
-    if (rows.find(column_name) != rows.end()){
-        if (rows[column_name].first == entity.type){
-            rows[column_name].second.push_back(entity);
-            return true;
+Table::Table(vector<Header> headers) : headers(std::move(headers)){}
+
+bool Table::add_row(const Row &row) {
+    for (size_t i = 0; i < row.entities.size(); ++i) {
+        if (headers[i].type != row.entities[i].type) {
+            perror("Some entities miss match type");
+            return false;
         }
     }
-    return false;
-}
-
-bool Table::check_column_type(const string &column_name, const EntityType &type) {
-    return rows[column_name].first == type;
-}
-
-bool Table::add_row(const vector<pair<string,Entity>> &row_elements) {
-    if (rows.size() == row_elements.size()) return false;
-    for (const auto& p : row_elements) {
-        if (!check_column_type(p.first,p.second.type))return false;
-    }
-
-    for(const auto& element : row_elements){
-        add_entity(element.first,element.second);
-    }
+    rows.push_back(row);
     return true;
+}
+
+vector<Row> Table::find(const Row &example) {
+    vector<Row> res;
+    for (auto & row : rows) {
+        bool coincidence = true;
+        for (int j = 0; j < example.entities.size(); ++j) {
+            if (example.entities[j].type != EntityType::NOTHING && !example.entities[j].compare(row.entities[j])){
+                coincidence = false;
+            }
+        }
+        if (coincidence){
+            res.push_back(row);
+        }
+    }
+
+    return res;
+}
+
+void Table::remove_row(const Row &example) {
+    for  (auto it = rows.begin(); it != rows.end(); it++) {
+        bool coincidence = true;
+        for (int j = 0; j < example.entities.size(); ++j) {
+            if (example.entities[j].type != EntityType::NOTHING && !example.entities[j].compare(it->entities[j])){
+                coincidence = false;
+            }
+        }
+        if (coincidence){
+            rows.erase(it);
+        }
+    }
+}
+
+const vector<Header> &Table::get_headers() {
+    return headers;
+}
+
+int Table::get_column_number(const string &cname) {
+    for (int i = 0; i < headers.size(); ++i) {
+        if (headers[i].name == cname) return i;
+    }
+    return -1;
+}
+
+EntityType Table::get_column_type(const int &i) {
+    return headers[i].type;
 }

@@ -6,20 +6,35 @@
 #define DB_TABLE_H
 
 #include <map>
+#include <utility>
 #include <vector>
 #include "Entity.h"
+#include "Row.h"
 
 using namespace std;
 
+struct Header{
+    Header(string  name,const EntityType& type) :name(std::move(name)), type(type){}
+    string name;
+    EntityType type;
+};
+
 class Table {
 public:
-    Table();
-    bool add_column(const string& column_name, const EntityType& type);
-    bool add_row(const vector<pair<string,Entity>>& row_elements);
+    explicit Table(vector<Header>  headers);
+
+    bool add_row(const Row& row);
+    vector<Row> find(const Row& example);
+    void remove_row(const Row& example);
+
+
+    const vector<Header>& get_headers();
+    int get_column_number(const string& cname);
+    EntityType get_column_type(const int& i);
 private:
-    bool check_column_type(const string& column_name, const EntityType& type);
-    bool add_entity(const string& column_name, const Entity& entity);
-    map<string,pair<EntityType,vector<Entity>>> rows;
+
+    vector<Row> rows;
+    vector<Header> headers;
 };
 
 
