@@ -44,6 +44,7 @@ void Table::remove_row(const Row &example) {
         }
         if (coincidence){
             rows.erase(it);
+            --it;
         }
     }
 }

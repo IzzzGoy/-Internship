@@ -10,71 +10,15 @@
 void DataBase::exec(string &query) {
     trim(query);
     int word_end = query.find(' ');
-    string word = query.substr(0,word_end);
-    if (word == "insert"){
-        /*reformat_query(query,word_end);
-        word_end = query.find(' ');
-        word = query.substr(0,word_end);
-        if(word != "in"){
-            cout << "Missing keyword 'in'" << endl;
-            return;
-        }
-        reformat_query(query,word_end);
-        word_end = query.find(' ');
-        word = query.substr(0,word_end);
-        if (tables.find(word) == tables.end()){
-            cout << "There is not table " << word << endl;
-            return;
-        }
-        const vector<Header> header = tables.at(word).get_headers();
-        string arg;
-        Row row;
-        for (int i = 0; i < header.size(); ++i) {
-            if (word_end == -1){
-                cout << "Unexpected end of query in " << query;
-                return;
-            }
-            reformat_query(query,word_end);
-            word_end = query.find(' ');
-            arg = query.substr(0,word_end);
-            if (header[i].type == EntityType::INT){
-                if (!Entity::check_int(arg)){
-                    cout << "Wrong type of " << arg << endl;
-                    return;
-                } else {
-                    row.add_entity(Entity(arg,EntityType::INT));
-                }
-            } else if (header[i].type == EntityType::DOUBLE) {
-                if (!Entity::check_double(arg)){
-                    cout << "Wrong type of " << arg << endl;
-                    return;
-                } else {
-                    row.add_entity(Entity(arg,EntityType::DOUBLE));
-                }
-            } else if (header[i].type == EntityType::DATE){
-                if (!Entity::check_date(arg)){
-                    cout << "Wrong type of " << arg << endl;
-                    return;
-                } else {
-                    row.add_entity(Entity(arg,EntityType::DATE));
-                }
-            } else {
-                row.add_entity(Entity(arg,EntityType::STRING));
-            }
-        }
-        if (query.find(' ') != -1)
-        {
-            cout << "Unexpected end of query in " << query;
-            return;
-        }
-        tables.at(word).add_row(row);*/
+    string word = query.substr(0,word_end);             ///Данная конструкция служит для перемещения текущего выбранного слова в запросе
+    if (word == "insert"){                                  ///Запрос на вставку данных
         insert(query,word_end);
     }
-    else if (word == "select"){
+    else if (word == "select"){                             ///Поиск данных, удовлетворяющих условию
         select(query,word_end);
-    } else if (word == "remove"){
+    } else if (word == "remove"){                           ///Удаление данных по условию
         remove(query,word_end);
-    } else if (word == "create"){
+    } else if (word == "create"){                           ///Создание таблицы
         create(query,word_end);
     } else {
         throw invalid_argument("Unexpected token " + word + " in " + query);
@@ -99,12 +43,12 @@ void DataBase::reformat_query(string& query,int pos) { ///Необходим, ч
 void DataBase::create(string &query, int word_end) {
     reformat_query(query,word_end);
     word_end = query.find(' ');
-    string table_name = query.substr(0,word_end);
-    reformat_query(query,word_end);
+    string table_name = query.substr(0,word_end);                           ///Выделение имени таблицы
     vector<Header> head;
-    if (query.empty()){
+    if (query == table_name){                                                   ///Проверка наличия аргументов
         throw invalid_argument("Unexpected end of query in " + query);
     }
+    reformat_query(query,word_end);
     while (!query.empty()){
         word_end = query.find(' ');
         string cname = query.substr(0,word_end);
@@ -228,7 +172,6 @@ void DataBase::insert(string &query, int word_end) {
     for (const auto & i : header) {
         if (word_end == -1){
             throw invalid_argument("Unexpected end of query in " + query);
-            return;
         }
         reformat_query(query,word_end);
         word_end = query.find(' ');
@@ -258,7 +201,6 @@ void DataBase::insert(string &query, int word_end) {
     if (query.find(' ') != -1)
     {
         throw invalid_argument("Unexpected end of query in " + query);
-        return;
     }
     tables.at(word).add_row(row);
 }

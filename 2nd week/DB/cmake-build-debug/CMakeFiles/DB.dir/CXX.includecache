@@ -11,6 +11,8 @@ algorithm
 -
 iostream
 -
+stdexcept
+-
 DataBase.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
 
@@ -29,6 +31,10 @@ vector
 -
 Entity.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.cpp
+Table.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
 
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
 map
