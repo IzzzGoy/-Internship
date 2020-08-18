@@ -7,10 +7,10 @@
 #include <utility>
 #include <regex>
 
-Entity::Entity(string value, const EntityType& entityType) : value(std::move(value)), type(entityType){
+Entity::Entity(const string& value, const EntityType& entityType) : value(std::move(value)), type(entityType){
 }
 
-string Entity::get_as_string() const {
+/*string Entity::get_as_string() const {
     return value;
 }
 
@@ -29,7 +29,7 @@ double Entity::get_as_double() const {
 bool Entity::check_date(const string &candidate) {
     regex rs {R"((0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d)"};
     return regex_match(candidate,rs);
-   /* bool isDay = true, isMonth, isYear;
+   *//* bool isDay = true, isMonth, isYear;
     string num;
     for (int i = 0; i < candidate.length(); ++i) {
         if (isdigit(candidate[i])){
@@ -37,7 +37,7 @@ bool Entity::check_date(const string &candidate) {
         } else if (candidate[i] == '.'){
 
         }
-    }*/
+    }*//*
 }
 
 bool Entity::check_int(const string &candidate) {
@@ -60,4 +60,32 @@ bool Entity::check_double(const string &candidate) {
 
 void Entity::set_value(const string &new_value) {
     this->value = new_value;
+}*/
+
+string Entity::get() const {
+    return value;
+}
+
+bool Entity::operator==(Entity &entity) {
+    return this->value == entity.value;
+}
+
+bool Entity::operator!=(Entity &entity) {
+    return this->value != entity.value;
+}
+
+bool Entity::operator<(Entity &entity) {
+    return this->value.length() < entity.value.length();
+}
+
+bool Entity::operator>(Entity &entity) {
+    return this->value.length() > entity.value.length();
+}
+
+bool Entity::operator<=(Entity &entity) {
+    return this->value.length() <= entity.value.length();
+}
+
+bool Entity::operator>=(Entity &entity) {
+    return this->value.length() >= entity.value.length();
 }

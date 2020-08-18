@@ -24,8 +24,10 @@ public:
     explicit Table(vector<Header>  headers);
 
     bool add_row(const Row& row);
-    vector<Row> find(const Row& example);
-    void remove_row(const Row& example);
+    vector<Row> find(Row example, const uint8_t op_byte[]);
+    void remove_row(Row example, const uint8_t op_byte[]);
+
+    void static sort(vector<Row>& row, const int& col_numb);
 
 
     const vector<Header>& get_headers();

@@ -86,16 +86,40 @@
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h">
 			<Option target="DB"/>
 		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Date.cpp">
+			<Option target="DB"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Date.h">
+			<Option target="DB"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Double.cpp">
+			<Option target="DB"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Double.h">
+			<Option target="DB"/>
+		</Unit>
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.cpp">
 			<Option target="DB"/>
 		</Unit>
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h">
 			<Option target="DB"/>
 		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Integer.cpp">
+			<Option target="DB"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Integer.h">
+			<Option target="DB"/>
+		</Unit>
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Row.cpp">
 			<Option target="DB"/>
 		</Unit>
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Row.h">
+			<Option target="DB"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/String.cpp">
+			<Option target="DB"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/String.h">
 			<Option target="DB"/>
 		</Unit>
 		<Unit filename="C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.cpp">

@@ -12,18 +12,18 @@ int main() {
     Border begin(NodeType::BEGIN), end(NodeType::END);
     Node *tmp = &begin;
     string formula;
-    string Xname = "";
+    char Xname = ' ';
     int X;
     cin >> formula;
-    for (int j = 0; j < formula.length(); ++j) {
-        if (!isdigit(formula[j]) && !Bracket::isBracket(formula[j]) && !Operation::isOperation(formula[j])) {
-            Xname = formula[j];
+    for (char j : formula) {
+        if (!isdigit(j) && !Bracket::isBracket(j) && !Operation::isOperation(j)) {
+            Xname = j;
         }
     }
-    if (!Xname.empty()) {
+    if (Xname != ' ') {
         cin >> X;
         for (int j = 0; j < formula.length(); ++j) {
-            if (formula[j] == Xname[0]) {
+            if (formula[j] == Xname) {
                 formula.erase(j, 1);
                 formula.insert(j, to_string(X));
             }

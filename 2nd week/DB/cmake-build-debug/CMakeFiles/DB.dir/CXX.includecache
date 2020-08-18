@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.cpp
-algorithm
--
-iostream
--
-stdexcept
--
-DataBase.h
-C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
-
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
 string
 -
@@ -31,10 +21,6 @@ vector
 -
 Entity.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
-
-C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.cpp
-Table.h
-C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
 
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
 map
@@ -47,4 +33,14 @@ Entity.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
 Row.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Row.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/main.cpp
+iostream
+-
+Table.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
+DataBase.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
+iostream
+-
 

@@ -21,18 +21,25 @@ class Entity {
 public:
     EntityType type;
 
-    Entity(string  value, const EntityType& entityType);
+    Entity(const string&  value, const EntityType& entityType);
 
-    bool compare(const Entity& entity) const;
-    static bool check_date(const string& candidate);
+    virtual bool operator== ( Entity& entity);
+    virtual bool operator!= ( Entity& entity);
+    virtual bool operator< ( Entity& entity);
+    virtual bool operator> ( Entity& entity);
+    virtual bool operator<= ( Entity& entity);
+    virtual bool operator>= ( Entity& entity);
+
+    /*static bool check_date(const string& candidate);
     static bool check_int(const string& candidate);
-    static bool check_double(const string& candidate);
+    static bool check_double(const string& candidate);*/
 
-    string get_as_string() const ;
-    int get_as_int() const ;
-    double get_as_double() const ;
+    /*string get_as_string() const;
+    int get_as_int() const;
+    double get_as_double() const;*/
+    string get() const;
 
-    void set_value(const string& new_value);
+    //virtual void set_value(const string& new_value);
 
 private:
     string value;

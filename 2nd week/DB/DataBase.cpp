@@ -6,6 +6,10 @@
 #include <iostream>
 #include <stdexcept>
 #include "DataBase.h"
+#include "Date.h"
+#include "Integer.h"
+#include "Double.h"
+#include "String.h"
 
 void DataBase::exec(string &query) {
     trim(query);
@@ -48,6 +52,9 @@ void DataBase::create(string &query, int word_end) {
     if (query == table_name){                                                   ///Проверка наличия аргументов
         throw invalid_argument("Unexpected end of query in " + query);
     }
+    if (tables.find(table_name) != tables.end()){
+        throw invalid_argument("Table already exists");
+    }
     reformat_query(query,word_end);
     while (!query.empty()){
         word_end = query.find(' ');
@@ -76,7 +83,7 @@ void DataBase::create(string &query, int word_end) {
     tables.emplace(table_name,Table(head));
 }
 
-void DataBase::select(string &query, int word_end) {
+vector<Row> DataBase::select(string &query, int word_end) {
     reformat_query(query,word_end);
     word_end = query.find(' ');
     string word = query.substr(0,word_end);
@@ -92,25 +99,38 @@ void DataBase::select(string &query, int word_end) {
     reformat_query(query,word_end);
     word_end = query.find(' ');
     word = query.substr(0,word_end);
+    bool need_sort = false;
+    int sort_col;
     vector<Row> res;
-    if (word != "where"){
-         res = tables.at(table_name).find(create_qrow(query, table_name, word_end, false));
-    } else {
-        res = tables.at(table_name).find(create_qrow(query,table_name, word_end, true));
+    auto* operations = new uint8_t[tables.at(table_name).get_headers().size()];
+    if (word == "sortby"){
+        need_sort = true;
+        reformat_query(query,word_end);
+        word_end = query.find(' ');
+        word = query.substr(0,word_end);
+        sort_col = tables.at(table_name).get_column_number(word);
+        if (sort_col == -1) throw invalid_argument("wrong column name");
+        reformat_query(query,word_end);
+        word_end = query.find(' ');
+        word = query.substr(0,word_end);
     }
-
-    for (const auto &item : res) {
+    res = tables.at(table_name).find(create_qrow(query, table_name, word_end, word == "where", operations), operations);
+    if (need_sort) Table::sort(res, sort_col);
+    delete [] operations;
+    return  res;
+    /*for (const auto &item : res) {
         for (const auto &e : item.entities) {
-            cout << e.get_as_string() << " ";
+            cout << e.get() << " ";
         }
         cout << endl;
-    }
+    }*/
 }
 
-const Row DataBase::create_qrow(string &query, string &table_name, int word_end, bool with_where) {
+Row DataBase::create_qrow(string &query, string &table_name, int word_end, bool with_where, uint8_t operations[]) {
     Row row;
     for (int i = 0; i < tables.at(table_name).get_headers().size(); ++i) {
         row.add_entity(Entity("",EntityType::NOTHING));
+        operations[i] = 128;
     }
     word_end = query.find(' ');
     string word = query.substr(0,word_end);
@@ -127,26 +147,43 @@ const Row DataBase::create_qrow(string &query, string &table_name, int word_end,
             reformat_query(query,word_end);
             word_end = query.find(' ');
             word = query.substr(0,word_end);
-            if (word != "="){
-                throw invalid_argument("Miss '=' " + word );
+            if (word == "="){
+                operations[column_num] = 0;
+            } else if (word == "!="){
+                operations[column_num] = 1;
+            } else if (word == "<"){
+                operations[column_num] = 2;
+            } else if (word == ">"){
+                operations[column_num] = 3;
+            } else if (word == "<"){
+                operations[column_num] = 4;
+            } else if (word == ">"){
+                operations[column_num] = 5;
+            } else {
+                throw invalid_argument("Miss operator " + word );
             }
             reformat_query(query,word_end);
             word_end = query.find(' ');
             word = query.substr(0,word_end);
-            if (tables.at(table_name).get_column_type(column_num) == EntityType::INT && Entity::check_int(word)){
-                row.entities[column_num].type = EntityType::INT;
-                row.entities[column_num].set_value(word);
-            } else if (tables.at(table_name).get_column_type(column_num) == EntityType::DOUBLE && Entity::check_double(word)) {
-                row.entities[column_num].type = EntityType::DOUBLE;
-                row.entities[column_num].set_value(word);
-            } else if (tables.at(table_name).get_column_type(column_num) == EntityType::DATE && Entity::check_date(word)){
-                row.entities[column_num].type = EntityType::DATE;
-                row.entities[column_num].set_value(word);
+            if (tables.at(table_name).get_column_type(column_num) == EntityType::INT && Integer::check_format(word)){
+                row.entities.erase(row.entities.begin() + column_num);
+                row.entities.insert(row.entities.begin() + column_num, Integer(word));
+            } else if (tables.at(table_name).get_column_type(column_num) == EntityType::DOUBLE && Double::check_format(word)) {
+                row.entities.erase(row.entities.begin() + column_num);
+                row.entities.insert(row.entities.begin() + column_num, Double(word));
+            } else if (tables.at(table_name).get_column_type(column_num) == EntityType::DATE && Date::check_format(word)){
+                row.entities.erase(row.entities.begin() + column_num);
+                row.entities.insert(row.entities.begin() + column_num, Date(word));
             } else if (tables.at(table_name).get_column_type(column_num) == EntityType::STRING){
-                row.entities[column_num].type = EntityType::STRING;
-                row.entities[column_num].set_value(word);
+                row.entities.erase(row.entities.begin() + column_num);
+                row.entities.insert(row.entities.begin() + column_num, String(word));
             } else {
-                throw invalid_argument("unexpected value type " + word);
+                throw invalid_argument(
+                        "unexpected value type " + word + "\n" +
+                        "Int format : num \n" +
+                        "Double format : num.num \n" +
+                        "Date format : dd.mm.yyyy"
+                        );
             }
         }
     }
@@ -177,19 +214,19 @@ void DataBase::insert(string &query, int word_end) {
         word_end = query.find(' ');
         arg = query.substr(0,word_end);
         if (i.type == EntityType::INT){
-            if (!Entity::check_int(arg)){
+            if (!Integer::check_format(arg)){
                 throw invalid_argument("Wrong type of " + arg);
             } else {
                 row.add_entity(Entity(arg,EntityType::INT));
             }
         } else if (i.type == EntityType::DOUBLE) {
-            if (!Entity::check_double(arg)){
+            if (!Double::check_format(arg)){
                 throw invalid_argument("Wrong type of " + arg);
             } else {
                 row.add_entity(Entity(arg,EntityType::DOUBLE));
             }
         } else if (i.type == EntityType::DATE){
-            if (!Entity::check_date(arg)){
+            if (!Date::check_format(arg)){
                 throw invalid_argument("Wrong type of " + arg);
             } else {
                 row.add_entity(Entity(arg,EntityType::DATE));
@@ -220,9 +257,26 @@ void DataBase::remove(string &query, int word_end) {
     }
     reformat_query(query,word_end);
     vector<Row> res;
+    uint8_t* operations = new uint8_t[tables.at(table_name).get_headers().size()];
     if (word != "where"){
-        tables.at(table_name).remove_row(create_qrow(query, table_name, word_end, false));
+        tables.at(table_name).remove_row(create_qrow(query, table_name, word_end, false, operations), operations);
     } else {
-        tables.at(table_name).remove_row(create_qrow(query,table_name, word_end, true));
+        tables.at(table_name).remove_row(create_qrow(query,table_name, word_end, true, operations), operations);
+    }
+    delete [] operations;
+}
+
+bool DataBase::is_empty() const{
+    return tables.empty();
+}
+
+vector<Row> DataBase::select_result(string &query) {
+    trim(query);
+    int word_end = query.find(' ');
+    string word = query.substr(0,word_end);
+    if (word == "select"){                             ///Поиск данных, удовлетворяющих условию
+        return select(query,word_end);
+    } else {
+        throw invalid_argument("it is not select query");
     }
 }

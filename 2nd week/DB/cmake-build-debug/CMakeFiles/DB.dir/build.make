@@ -121,13 +121,69 @@ CMakeFiles/DB.dir/Row.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB.dir/Row.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Row.cpp" -o CMakeFiles\DB.dir\Row.cpp.s
 
+CMakeFiles/DB.dir/Integer.cpp.obj: CMakeFiles/DB.dir/flags.make
+CMakeFiles/DB.dir/Integer.cpp.obj: ../Integer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DB.dir/Integer.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DB.dir\Integer.cpp.obj -c "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Integer.cpp"
+
+CMakeFiles/DB.dir/Integer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB.dir/Integer.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Integer.cpp" > CMakeFiles\DB.dir\Integer.cpp.i
+
+CMakeFiles/DB.dir/Integer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB.dir/Integer.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Integer.cpp" -o CMakeFiles\DB.dir\Integer.cpp.s
+
+CMakeFiles/DB.dir/Double.cpp.obj: CMakeFiles/DB.dir/flags.make
+CMakeFiles/DB.dir/Double.cpp.obj: ../Double.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DB.dir/Double.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DB.dir\Double.cpp.obj -c "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Double.cpp"
+
+CMakeFiles/DB.dir/Double.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB.dir/Double.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Double.cpp" > CMakeFiles\DB.dir\Double.cpp.i
+
+CMakeFiles/DB.dir/Double.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB.dir/Double.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Double.cpp" -o CMakeFiles\DB.dir\Double.cpp.s
+
+CMakeFiles/DB.dir/String.cpp.obj: CMakeFiles/DB.dir/flags.make
+CMakeFiles/DB.dir/String.cpp.obj: ../String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DB.dir/String.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DB.dir\String.cpp.obj -c "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\String.cpp"
+
+CMakeFiles/DB.dir/String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB.dir/String.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\String.cpp" > CMakeFiles\DB.dir\String.cpp.i
+
+CMakeFiles/DB.dir/String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB.dir/String.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\String.cpp" -o CMakeFiles\DB.dir\String.cpp.s
+
+CMakeFiles/DB.dir/Date.cpp.obj: CMakeFiles/DB.dir/flags.make
+CMakeFiles/DB.dir/Date.cpp.obj: ../Date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DB.dir/Date.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DB.dir\Date.cpp.obj -c "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Date.cpp"
+
+CMakeFiles/DB.dir/Date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB.dir/Date.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Date.cpp" > CMakeFiles\DB.dir\Date.cpp.i
+
+CMakeFiles/DB.dir/Date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB.dir/Date.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\Date.cpp" -o CMakeFiles\DB.dir\Date.cpp.s
+
 # Object files for target DB
 DB_OBJECTS = \
 "CMakeFiles/DB.dir/main.cpp.obj" \
 "CMakeFiles/DB.dir/DataBase.cpp.obj" \
 "CMakeFiles/DB.dir/Entity.cpp.obj" \
 "CMakeFiles/DB.dir/Table.cpp.obj" \
-"CMakeFiles/DB.dir/Row.cpp.obj"
+"CMakeFiles/DB.dir/Row.cpp.obj" \
+"CMakeFiles/DB.dir/Integer.cpp.obj" \
+"CMakeFiles/DB.dir/Double.cpp.obj" \
+"CMakeFiles/DB.dir/String.cpp.obj" \
+"CMakeFiles/DB.dir/Date.cpp.obj"
 
 # External object files for target DB
 DB_EXTERNAL_OBJECTS =
@@ -137,11 +193,15 @@ DB.exe: CMakeFiles/DB.dir/DataBase.cpp.obj
 DB.exe: CMakeFiles/DB.dir/Entity.cpp.obj
 DB.exe: CMakeFiles/DB.dir/Table.cpp.obj
 DB.exe: CMakeFiles/DB.dir/Row.cpp.obj
+DB.exe: CMakeFiles/DB.dir/Integer.cpp.obj
+DB.exe: CMakeFiles/DB.dir/Double.cpp.obj
+DB.exe: CMakeFiles/DB.dir/String.cpp.obj
+DB.exe: CMakeFiles/DB.dir/Date.cpp.obj
 DB.exe: CMakeFiles/DB.dir/build.make
 DB.exe: CMakeFiles/DB.dir/linklibs.rsp
 DB.exe: CMakeFiles/DB.dir/objects1.rsp
 DB.exe: CMakeFiles/DB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DB.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Alex\Documents\GitHub\-Internship\2nd week\DB\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable DB.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DB.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

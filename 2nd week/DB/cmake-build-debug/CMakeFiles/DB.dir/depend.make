@@ -3,19 +3,43 @@
 
 CMakeFiles/DB.dir/DataBase.cpp.obj: ../DataBase.cpp
 CMakeFiles/DB.dir/DataBase.cpp.obj: ../DataBase.h
+CMakeFiles/DB.dir/DataBase.cpp.obj: ../Date.h
+CMakeFiles/DB.dir/DataBase.cpp.obj: ../Double.h
 CMakeFiles/DB.dir/DataBase.cpp.obj: ../Entity.h
+CMakeFiles/DB.dir/DataBase.cpp.obj: ../Integer.h
 CMakeFiles/DB.dir/DataBase.cpp.obj: ../Row.h
+CMakeFiles/DB.dir/DataBase.cpp.obj: ../String.h
 CMakeFiles/DB.dir/DataBase.cpp.obj: ../Table.h
+
+CMakeFiles/DB.dir/Date.cpp.obj: ../Date.cpp
+CMakeFiles/DB.dir/Date.cpp.obj: ../Date.h
+CMakeFiles/DB.dir/Date.cpp.obj: ../Entity.h
+
+CMakeFiles/DB.dir/Double.cpp.obj: ../Double.cpp
+CMakeFiles/DB.dir/Double.cpp.obj: ../Double.h
+CMakeFiles/DB.dir/Double.cpp.obj: ../Entity.h
 
 CMakeFiles/DB.dir/Entity.cpp.obj: ../Entity.cpp
 CMakeFiles/DB.dir/Entity.cpp.obj: ../Entity.h
+
+CMakeFiles/DB.dir/Integer.cpp.obj: ../Entity.h
+CMakeFiles/DB.dir/Integer.cpp.obj: ../Integer.cpp
+CMakeFiles/DB.dir/Integer.cpp.obj: ../Integer.h
 
 CMakeFiles/DB.dir/Row.cpp.obj: ../Entity.h
 CMakeFiles/DB.dir/Row.cpp.obj: ../Row.cpp
 CMakeFiles/DB.dir/Row.cpp.obj: ../Row.h
 
+CMakeFiles/DB.dir/String.cpp.obj: ../Entity.h
+CMakeFiles/DB.dir/String.cpp.obj: ../String.cpp
+CMakeFiles/DB.dir/String.cpp.obj: ../String.h
+
+CMakeFiles/DB.dir/Table.cpp.obj: ../Date.h
+CMakeFiles/DB.dir/Table.cpp.obj: ../Double.h
 CMakeFiles/DB.dir/Table.cpp.obj: ../Entity.h
+CMakeFiles/DB.dir/Table.cpp.obj: ../Integer.h
 CMakeFiles/DB.dir/Table.cpp.obj: ../Row.h
+CMakeFiles/DB.dir/Table.cpp.obj: ../String.h
 CMakeFiles/DB.dir/Table.cpp.obj: ../Table.cpp
 CMakeFiles/DB.dir/Table.cpp.obj: ../Table.h
 

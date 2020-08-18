@@ -13,15 +13,17 @@ using namespace std;
 class DataBase {
 public:
     void exec (string& query);
+    [[nodiscard]] bool is_empty() const;
+    vector<Row> select_result(string& query);
+    map<string,Table> tables;
 private:
     static void trim(string& line);
     void reformat_query(string & query, int pos);
-    map<string,Table> tables;
     void create(string& query, int word_end);
-    void select(string& query, int word_end);
+    vector<Row> select(string& query, int word_end);
     void insert(string& query, int word_end);
     void remove(string& query, int word_end);
-    const Row create_qrow(string &query, string &table_name, int word_end, bool with_where);
+    Row create_qrow(string &query, string &table_name, int word_end, bool with_where, uint8_t operations[]);
 };
 
 

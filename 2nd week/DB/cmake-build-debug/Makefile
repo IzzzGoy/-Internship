@@ -149,6 +149,60 @@ DataBase.cpp.s:
 	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/DataBase.cpp.s
 .PHONY : DataBase.cpp.s
 
+Date.obj: Date.cpp.obj
+
+.PHONY : Date.obj
+
+# target to build an object file
+Date.cpp.obj:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Date.cpp.obj
+.PHONY : Date.cpp.obj
+
+Date.i: Date.cpp.i
+
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cpp.i:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Date.cpp.i
+.PHONY : Date.cpp.i
+
+Date.s: Date.cpp.s
+
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cpp.s:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Date.cpp.s
+.PHONY : Date.cpp.s
+
+Double.obj: Double.cpp.obj
+
+.PHONY : Double.obj
+
+# target to build an object file
+Double.cpp.obj:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Double.cpp.obj
+.PHONY : Double.cpp.obj
+
+Double.i: Double.cpp.i
+
+.PHONY : Double.i
+
+# target to preprocess a source file
+Double.cpp.i:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Double.cpp.i
+.PHONY : Double.cpp.i
+
+Double.s: Double.cpp.s
+
+.PHONY : Double.s
+
+# target to generate assembly for a file
+Double.cpp.s:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Double.cpp.s
+.PHONY : Double.cpp.s
+
 Entity.obj: Entity.cpp.obj
 
 .PHONY : Entity.obj
@@ -176,6 +230,33 @@ Entity.cpp.s:
 	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Entity.cpp.s
 .PHONY : Entity.cpp.s
 
+Integer.obj: Integer.cpp.obj
+
+.PHONY : Integer.obj
+
+# target to build an object file
+Integer.cpp.obj:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Integer.cpp.obj
+.PHONY : Integer.cpp.obj
+
+Integer.i: Integer.cpp.i
+
+.PHONY : Integer.i
+
+# target to preprocess a source file
+Integer.cpp.i:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Integer.cpp.i
+.PHONY : Integer.cpp.i
+
+Integer.s: Integer.cpp.s
+
+.PHONY : Integer.s
+
+# target to generate assembly for a file
+Integer.cpp.s:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Integer.cpp.s
+.PHONY : Integer.cpp.s
+
 Row.obj: Row.cpp.obj
 
 .PHONY : Row.obj
@@ -202,6 +283,33 @@ Row.s: Row.cpp.s
 Row.cpp.s:
 	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/Row.cpp.s
 .PHONY : Row.cpp.s
+
+String.obj: String.cpp.obj
+
+.PHONY : String.obj
+
+# target to build an object file
+String.cpp.obj:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/String.cpp.obj
+.PHONY : String.cpp.obj
+
+String.i: String.cpp.i
+
+.PHONY : String.i
+
+# target to preprocess a source file
+String.cpp.i:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/String.cpp.i
+.PHONY : String.cpp.i
+
+String.s: String.cpp.s
+
+.PHONY : String.s
+
+# target to generate assembly for a file
+String.cpp.s:
+	$(MAKE) -f CMakeFiles\DB.dir\build.make CMakeFiles/DB.dir/String.cpp.s
+.PHONY : String.cpp.s
 
 Table.obj: Table.cpp.obj
 
@@ -269,12 +377,24 @@ help:
 	@echo ... DataBase.obj
 	@echo ... DataBase.i
 	@echo ... DataBase.s
+	@echo ... Date.obj
+	@echo ... Date.i
+	@echo ... Date.s
+	@echo ... Double.obj
+	@echo ... Double.i
+	@echo ... Double.s
 	@echo ... Entity.obj
 	@echo ... Entity.i
 	@echo ... Entity.s
+	@echo ... Integer.obj
+	@echo ... Integer.i
+	@echo ... Integer.s
 	@echo ... Row.obj
 	@echo ... Row.i
 	@echo ... Row.s
+	@echo ... String.obj
+	@echo ... String.i
+	@echo ... String.s
 	@echo ... Table.obj
 	@echo ... Table.i
 	@echo ... Table.s
