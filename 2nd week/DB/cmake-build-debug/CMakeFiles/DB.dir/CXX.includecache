@@ -6,21 +6,71 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.cpp
+algorithm
+-
+iostream
+-
+stdexcept
+-
+DataBase.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
+Date.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Date.h
+Integer.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Integer.h
+Double.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Double.h
+String.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/String.h
+
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/DataBase.h
 string
 -
 Table.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
 
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Date.h
+string
+-
+Entity.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Double.h
+Entity.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
 string
 -
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Integer.h
+Entity.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
 
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Row.h
 vector
 -
 Entity.h
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/String.h
+Entity.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Entity.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.cpp
+algorithm
+-
+Table.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
+String.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/String.h
+Integer.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Integer.h
+Date.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Date.h
+Double.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Double.h
 
 C:/Users/Alex/Documents/GitHub/-Internship/2nd week/DB/Table.h
 map

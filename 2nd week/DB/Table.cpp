@@ -36,20 +36,20 @@ bool Table::add_row(const Row &row) {
     return true;
 }
 
-vector<Row> Table::find(Row example, const uint8_t op_byte[]) {
+vector<Row> Table::find(const vector<QueryEntity>& recv) {
     vector<Row> res;
     for (auto & row : rows) {
         bool coincidence = true;
-        for (int j = 0; j < example.entities.size(); ++j) {
-            if (example.entities[j].type != EntityType::NOTHING){
-                if (example.entities[j].type == EntityType::STRING){
-                    coincidence = make_coincidence(static_cast<String>(example.entities[j]), static_cast<String>(row.entities[j]), op_byte[j]);
-                } else if (example.entities[j].type == EntityType::INT){
-                    coincidence = make_coincidence(static_cast<Integer>(example.entities[j]),static_cast<Integer>(row.entities[j]), op_byte[j]);
-                } else if (example.entities[j].type == EntityType::DATE){
-                    coincidence = make_coincidence(static_cast<Date>(example.entities[j]), static_cast<Date>(row.entities[j]), op_byte[j]);
-                } else if (example.entities[j].type == EntityType::DOUBLE){
-                    coincidence = make_coincidence(static_cast<Double>(example.entities[j]), static_cast<Double>(row.entities[j]), op_byte[j]);
+        for (auto & j : recv) {
+            if (j.entity.type != EntityType::NOTHING){
+                if (j.entity.type == EntityType::STRING){
+                    coincidence = make_coincidence(static_cast<String>(j.entity), static_cast<String>(row.entities[j.column_numb]), j.op);
+                } else if (j.entity.type == EntityType::INT){
+                    coincidence = make_coincidence(static_cast<Integer>(j.entity),static_cast<Integer>(row.entities[j.column_numb]), j.op);
+                } else if (j.entity.type == EntityType::DATE){
+                    coincidence = make_coincidence(static_cast<Date>(j.entity), static_cast<Date>(row.entities[j.column_numb]), j.op);
+                } else if (j.entity.type == EntityType::DOUBLE){
+                    coincidence = make_coincidence(static_cast<Double>(j.entity), static_cast<Double>(row.entities[j.column_numb]), j.op);
                 }
             }
         }
@@ -61,19 +61,19 @@ vector<Row> Table::find(Row example, const uint8_t op_byte[]) {
     return res;
 }
 
-void Table::remove_row(Row example, const uint8_t op_byte[]) {
+void Table::remove_row(const vector<QueryEntity>& recv) {
     for  (auto it = rows.begin(); it != rows.end(); it++) {
         bool coincidence = true;
-        for (int j = 0; j < example.entities.size(); ++j) {
-            if (example.entities[j].type != EntityType::NOTHING){
-                if (example.entities[j].type == EntityType::STRING){
-                    coincidence = make_coincidence(static_cast<String>(example.entities[j]), static_cast<String>(it->entities[j]), op_byte[j]);
-                } else if (example.entities[j].type == EntityType::INT){
-                    coincidence = make_coincidence(static_cast<Integer>(example.entities[j]),static_cast<Integer>(it->entities[j]), op_byte[j]);
-                } else if (example.entities[j].type == EntityType::DATE){
-                    coincidence = make_coincidence(static_cast<Date>(example.entities[j]), static_cast<Date>(it->entities[j]), op_byte[j]);
-                } else if (example.entities[j].type == EntityType::DOUBLE){
-                    coincidence = make_coincidence(static_cast<Double>(example.entities[j]), static_cast<Double>(it->entities[j]), op_byte[j]);
+        for (auto & j : recv) {
+            if (j.entity.type != EntityType::NOTHING){
+                if (j.entity.type == EntityType::STRING){
+                    coincidence = make_coincidence(static_cast<String>(j.entity), static_cast<String>(it->entities[j.column_numb]), j.op);
+                } else if (j.entity.type == EntityType::INT){
+                    coincidence = make_coincidence(static_cast<Integer>(j.entity),static_cast<Integer>(it->entities[j.column_numb]), j.op);
+                } else if (j.entity.type == EntityType::DATE){
+                    coincidence = make_coincidence(static_cast<Date>(j.entity), static_cast<Date>(it->entities[j.column_numb]), j.op);
+                } else if (j.entity.type == EntityType::DOUBLE){
+                    coincidence = make_coincidence(static_cast<Double>(j.entity), static_cast<Double>(it->entities[j.column_numb]), j.op);
                 }
             }
         }

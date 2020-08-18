@@ -19,13 +19,19 @@ struct Header{
     EntityType type;
 };
 
+struct QueryEntity{
+    size_t column_numb;
+    uint8_t op;
+    Entity entity = Entity("",EntityType::NOTHING);
+};
+
 class Table {
 public:
     explicit Table(vector<Header>  headers);
 
     bool add_row(const Row& row);
-    vector<Row> find(Row example, const uint8_t op_byte[]);
-    void remove_row(Row example, const uint8_t op_byte[]);
+    vector<Row> find(const vector<QueryEntity>& recv);
+    void remove_row(const vector<QueryEntity>& recv);
 
     void static sort(vector<Row>& row, const int& col_numb);
 

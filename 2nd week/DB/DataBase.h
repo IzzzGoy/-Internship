@@ -23,7 +23,7 @@ private:
     vector<Row> select(string& query, int word_end);
     void insert(string& query, int word_end);
     void remove(string& query, int word_end);
-    Row create_qrow(string &query, string &table_name, int word_end, bool with_where, uint8_t operations[]);
+    vector<QueryEntity> create_qrow(string &query, string &table_name, int word_end, bool with_where);
 };
 
 

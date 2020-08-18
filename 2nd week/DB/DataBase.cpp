@@ -102,7 +102,6 @@ vector<Row> DataBase::select(string &query, int word_end) {
     bool need_sort = false;
     int sort_col;
     vector<Row> res;
-    auto* operations = new uint8_t[tables.at(table_name).get_headers().size()];
     if (word == "sortby"){
         need_sort = true;
         reformat_query(query,word_end);
@@ -114,9 +113,8 @@ vector<Row> DataBase::select(string &query, int word_end) {
         word_end = query.find(' ');
         word = query.substr(0,word_end);
     }
-    res = tables.at(table_name).find(create_qrow(query, table_name, word_end, word == "where", operations), operations);
+    res = tables.at(table_name).find(create_qrow(query, table_name, word_end, word == "where"));
     if (need_sort) Table::sort(res, sort_col);
-    delete [] operations;
     return  res;
     /*for (const auto &item : res) {
         for (const auto &e : item.entities) {
@@ -126,15 +124,11 @@ vector<Row> DataBase::select(string &query, int word_end) {
     }*/
 }
 
-Row DataBase::create_qrow(string &query, string &table_name, int word_end, bool with_where, uint8_t operations[]) {
-    Row row;
-    for (int i = 0; i < tables.at(table_name).get_headers().size(); ++i) {
-        row.add_entity(Entity("",EntityType::NOTHING));
-        operations[i] = 128;
-    }
+vector<QueryEntity> DataBase::create_qrow(string &query, string &table_name, int word_end, bool with_where) {
+    vector<QueryEntity> queryEnt;
     word_end = query.find(' ');
     string word = query.substr(0,word_end);
-    if (!with_where)return row;
+    if (!with_where)return queryEnt;
     else {
         while (word_end != -1){
             reformat_query(query,word_end);
@@ -144,21 +138,23 @@ Row DataBase::create_qrow(string &query, string &table_name, int word_end, bool 
             if (column_num == -1){
                 throw invalid_argument("There is no in table " + word);
             }
+            queryEnt.push_back(QueryEntity());
+            queryEnt.back().column_numb = column_num;
             reformat_query(query,word_end);
             word_end = query.find(' ');
             word = query.substr(0,word_end);
             if (word == "="){
-                operations[column_num] = 0;
+                queryEnt.back().op = 0;
             } else if (word == "!="){
-                operations[column_num] = 1;
+                queryEnt.back().op  = 1;
             } else if (word == "<"){
-                operations[column_num] = 2;
+                queryEnt.back().op  = 2;
             } else if (word == ">"){
-                operations[column_num] = 3;
+                queryEnt.back().op  = 3;
             } else if (word == "<"){
-                operations[column_num] = 4;
+                queryEnt.back().op  = 4;
             } else if (word == ">"){
-                operations[column_num] = 5;
+                queryEnt.back().op  = 5;
             } else {
                 throw invalid_argument("Miss operator " + word );
             }
@@ -166,17 +162,13 @@ Row DataBase::create_qrow(string &query, string &table_name, int word_end, bool 
             word_end = query.find(' ');
             word = query.substr(0,word_end);
             if (tables.at(table_name).get_column_type(column_num) == EntityType::INT && Integer::check_format(word)){
-                row.entities.erase(row.entities.begin() + column_num);
-                row.entities.insert(row.entities.begin() + column_num, Integer(word));
+                queryEnt.back().entity = Integer(word);
             } else if (tables.at(table_name).get_column_type(column_num) == EntityType::DOUBLE && Double::check_format(word)) {
-                row.entities.erase(row.entities.begin() + column_num);
-                row.entities.insert(row.entities.begin() + column_num, Double(word));
+                queryEnt.back().entity = Double(word);
             } else if (tables.at(table_name).get_column_type(column_num) == EntityType::DATE && Date::check_format(word)){
-                row.entities.erase(row.entities.begin() + column_num);
-                row.entities.insert(row.entities.begin() + column_num, Date(word));
+                queryEnt.back().entity = Date(word);
             } else if (tables.at(table_name).get_column_type(column_num) == EntityType::STRING){
-                row.entities.erase(row.entities.begin() + column_num);
-                row.entities.insert(row.entities.begin() + column_num, String(word));
+                queryEnt.back().entity = String(word);
             } else {
                 throw invalid_argument(
                         "unexpected value type " + word + "\n" +
@@ -187,7 +179,7 @@ Row DataBase::create_qrow(string &query, string &table_name, int word_end, bool 
             }
         }
     }
-    return row;
+    return queryEnt;
 }
 
 void DataBase::insert(string &query, int word_end) {
@@ -256,14 +248,7 @@ void DataBase::remove(string &query, int word_end) {
         throw invalid_argument("There is not table " + word);
     }
     reformat_query(query,word_end);
-    vector<Row> res;
-    uint8_t* operations = new uint8_t[tables.at(table_name).get_headers().size()];
-    if (word != "where"){
-        tables.at(table_name).remove_row(create_qrow(query, table_name, word_end, false, operations), operations);
-    } else {
-        tables.at(table_name).remove_row(create_qrow(query,table_name, word_end, true, operations), operations);
-    }
-    delete [] operations;
+    tables.at(table_name).remove_row(create_qrow(query,table_name, word_end, word != "where"));
 }
 
 bool DataBase::is_empty() const{

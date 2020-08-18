@@ -147,8 +147,6 @@ int main() {
     vector<Row> finds = table.find(row);
     std::cout << "Hello, World!" << std::endl;
 
-
-     
     cout << Entity::check_date("20.02.2011");*/
     /*string s = "create b i int";
     dataBase.exec(s);
