@@ -44,7 +44,9 @@ CMakeFiles/DB.dir/Table.cpp.obj: ../Table.cpp
 CMakeFiles/DB.dir/Table.cpp.obj: ../Table.h
 
 CMakeFiles/DB.dir/main.cpp.obj: ../DataBase.h
+CMakeFiles/DB.dir/main.cpp.obj: ../Date.h
 CMakeFiles/DB.dir/main.cpp.obj: ../Entity.h
+CMakeFiles/DB.dir/main.cpp.obj: ../Integer.h
 CMakeFiles/DB.dir/main.cpp.obj: ../Row.h
 CMakeFiles/DB.dir/main.cpp.obj: ../Table.h
 CMakeFiles/DB.dir/main.cpp.obj: ../main.cpp

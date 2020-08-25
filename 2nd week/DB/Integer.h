@@ -12,7 +12,7 @@ class Integer : public Entity{
 public:
     explicit Integer(const string& value);
 
-    Integer(const Entity &entity);
+    explicit Integer(const Entity &entity);
 
     static bool check_format(const string& candidate);
 
@@ -23,6 +23,9 @@ public:
     bool operator<= ( Entity& entity) override;
     bool operator>= ( Entity& entity) override;
 
+    [[nodiscard]] int get_value() const{
+        return i_value;
+    }
 private:
     int i_value;
 };

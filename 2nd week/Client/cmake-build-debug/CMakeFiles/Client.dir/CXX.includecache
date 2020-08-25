@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Client/Client.cpp
+Client.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Client/Client.h
+iostream
+-
+fcntl.h
+-
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Client/Client.h
+WinSock2.h
+-
+cstdint
+-
+string
+-
+thread
+-
+

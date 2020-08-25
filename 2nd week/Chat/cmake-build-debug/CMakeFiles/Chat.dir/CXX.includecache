@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Chat/POJOUser.h
+string
+-
+WinSock2.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Chat/WinSock2.h
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Chat/Server.cpp
+iostream
+-
+Server.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Chat/Server.h
+chrono
+-
+
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Chat/Server.h
+WinSock2.h
+-
+cstdint
+-
+thread
+-
+vector
+-
+mutex
+-
+POJOUser.h
+C:/Users/Alex/Documents/GitHub/-Internship/2nd week/Chat/POJOUser.h
+

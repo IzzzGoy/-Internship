@@ -39,9 +39,12 @@ public:
     const vector<Header>& get_headers();
     int get_column_number(const string& cname);
     EntityType get_column_type(const int& i);
-private:
+
 
     vector<Row> rows;
+private:
+
+
     vector<Header> headers;
 };
 

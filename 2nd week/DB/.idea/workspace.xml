@@ -54,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1st week/add 3/4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,7 +105,11 @@
       <workItem from="1597219401559" duration="8521000" />
       <workItem from="1597320959832" duration="2423000" />
       <workItem from="1597654538159" duration="11271000" />
-      <workItem from="1597751696155" duration="5470000" />
+      <workItem from="1597751696155" duration="6675000" />
+      <workItem from="1597834846907" duration="7852000" />
+      <workItem from="1597862553362" duration="2010000" />
+      <workItem from="1597922150672" duration="640000" />
+      <workItem from="1597929518524" duration="1090000" />
     </task>
     <servers />
   </component>
@@ -129,38 +133,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1597322474339" />
-    <state width="938" height="190" key="GridCell.Tab.0.bottom" timestamp="1597692769538">
+    <state width="938" height="447" key="GridCell.Tab.0.bottom" timestamp="1597932111082">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769538" />
-    <state width="938" height="190" key="GridCell.Tab.0.center" timestamp="1597692769537">
+    <state width="938" height="447" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597932111082" />
+    <state width="938" height="447" key="GridCell.Tab.0.center" timestamp="1597932111082">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769537" />
-    <state width="938" height="190" key="GridCell.Tab.0.left" timestamp="1597692769537">
+    <state width="938" height="447" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597932111082" />
+    <state width="938" height="447" key="GridCell.Tab.0.left" timestamp="1597932111082">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769537" />
-    <state width="938" height="190" key="GridCell.Tab.0.right" timestamp="1597692769537">
+    <state width="938" height="447" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597932111082" />
+    <state width="938" height="447" key="GridCell.Tab.0.right" timestamp="1597932111082">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769537" />
-    <state width="938" height="190" key="GridCell.Tab.1.bottom" timestamp="1597692769538">
+    <state width="938" height="447" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597932111082" />
+    <state width="938" height="190" key="GridCell.Tab.1.bottom" timestamp="1597864565277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769538" />
-    <state width="938" height="190" key="GridCell.Tab.1.center" timestamp="1597692769538">
+    <state width="938" height="190" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597864565277" />
+    <state width="938" height="190" key="GridCell.Tab.1.center" timestamp="1597864565277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769538" />
-    <state width="938" height="190" key="GridCell.Tab.1.left" timestamp="1597692769538">
+    <state width="938" height="190" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597864565277" />
+    <state width="938" height="190" key="GridCell.Tab.1.left" timestamp="1597864565277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769538" />
-    <state width="938" height="190" key="GridCell.Tab.1.right" timestamp="1597692769538">
+    <state width="938" height="190" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597864565277" />
+    <state width="938" height="190" key="GridCell.Tab.1.right" timestamp="1597864565277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="938" height="190" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597692769538" />
+    <state width="938" height="190" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597864565277" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1596815902759">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -171,25 +175,6 @@
     <state x="840" y="310" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597062923031" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/DataBase.cpp</url>
-          <line>133</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/DataBase.cpp</url>
-          <line>116</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Table.cpp</url>
-          <line>104</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="example.entities" />
